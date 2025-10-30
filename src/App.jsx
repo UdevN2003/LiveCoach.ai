@@ -3,6 +3,7 @@ function App() {
     <>
       <div>
         <h1 className="bg-primary">LiveCoach.AI</h1>
+        <p>xhecehvosrhvoirhvberibhtiohbrt</p>
        </div>
     </>
   )
