@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <div>
-        <h1 className="text-red-600">LiveCoach.AI</h1>
+        <h1 className="bg-primary">LiveCoach.AI</h1>
        </div>
     </>
   )
