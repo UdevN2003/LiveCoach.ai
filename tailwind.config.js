@@ -17,6 +17,10 @@ export default {
         secondary: "#B13B8F",     //Redish pink (Should convert to a gradient)
         border: "#2A2A2A",     // subtle border lines
       },
+    
+    fontFamily: {
+      roboto: ['Roboto', 'sans-serif'],
+    }
   } },
   plugins: [],
 }
