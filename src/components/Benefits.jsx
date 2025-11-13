@@ -17,8 +17,11 @@ const Benefits = () => {
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
             Train from anywhere with just your <br />phone camera or webcam – no sensors needed.
           </p>
-          <a href="#" className="text-primary text-sm font-medium flex items-center gap-2 hover:underline">
-            More Info <span className="text-primary">→</span>
+          <a href="#" className="text-primary text-sm font-medium flex items-center gap-2 group hover:no-underline">
+            More Info
+            <span className="text-primary inline-block transform transition-transform duration-300 ease-out group-hover:translate-x-1">
+              →
+            </span>
           </a>
         </div>
 
@@ -28,8 +31,8 @@ const Benefits = () => {
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
             Get real-time analysis on your movements, posture, and <br /> techniques.
           </p>
-          <a href="#" className="text-primary text-sm font-medium flex items-center gap-2 hover:underline">
-            More Info <span className="text-primary">→</span>
+          <a href="#" className="text-primary text-sm font-medium flex items-center gap-2 group hover:no-underline">
+            More Info <span className="text-primary inline-block transform transition-transform duration-300 ease-out group-hover:translate-x-1">→</span>
           </a>
         </div>
 
@@ -37,10 +40,10 @@ const Benefits = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Personalized Coaching Plans</h3>
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
-            Receive tailor-made drills and improvements based on your performance data.
+            Receive tailor-made drills and improvements based on your <br /> performance data.
           </p>
-          <a href="#" className="text-primary text-sm font-medium flex items-center gap-2 hover:underline">
-            More Info <span className="text-primary">→</span>
+          <a href="#" className="text-primary text-sm font-medium flex items-center gap-2 group hover:no-underline">
+            More Info <span className="text-primary inline-block transform transition-transform duration-300 ease-out group-hover:translate-x-1">→</span>
           </a>
         </div>
       </div>
