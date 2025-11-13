@@ -27,7 +27,7 @@ function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center px-8 pt-32 pb-20">
         {/* Main Heading */}
         <h1 className="text-center mb-12">
-          <div className="text-6xl md:text-7xl font-bold mb-4">
+          <div className="text-6xl md:text-7xl font-bold mb-4 font-abeezee">
             Train Smarter With
           </div>
           <div className="text-6xl md:text-7xl font-bold">
