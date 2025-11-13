@@ -1,4 +1,5 @@
 import Benefits from "./components/Benefits"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Hero></Hero>
       <Benefits/>
+      <Footer/>
     </>
   )
 }
