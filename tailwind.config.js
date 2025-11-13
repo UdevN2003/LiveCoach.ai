@@ -19,7 +19,7 @@ export default {
       },
     
     fontFamily: {
-      roboto: ['Roboto', 'sans-serif'],
+      abeezee: ['ABeeZee', 'sans-serif'],
     }
   } },
   plugins: [],
