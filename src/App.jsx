@@ -8,6 +8,7 @@ function App() {
     <>
       <Hero></Hero>
       <Benefits/>
+      <Features></Features>
       <Footer/>
     </>
   )
