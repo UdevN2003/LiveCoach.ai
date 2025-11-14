@@ -12,11 +12,10 @@ function Features() {
       <div className="max-w-7xl mx-auto px-8 mb-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 relative">
-            <div className="absolute inset-0 bg-yellow-500/20 blur-3xl rounded-full"></div>
             <img 
               src={featureOne} 
               alt="Camera-Based Motion Tracking" 
-              className="w-full rounded-lg relative z-10 shadow-2xl shadow-yellow-500/30"
+              className="w-full rounded-lg relative z-10"
             />
           </div>
           <div className="order-1 md:order-2">
@@ -70,14 +69,13 @@ function Features() {
       </div>
 
       {/* Feature 3: Coach Athlete Connection */}
-      <div className="max-w-7xl mx-auto px-8 mb-32">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 relative">
-            <div className="absolute inset-0 bg-yellow-500/20 blur-3xl rounded-full"></div>
             <img 
               src={featureThree} 
               alt="Coach athlete connection" 
-              className="w-full rounded-lg relative z-10 shadow-2xl shadow-yellow-500/30"
+              className="w-full rounded-lg relative z-10"
             />
           </div>
           <div className="order-1 md:order-2">
