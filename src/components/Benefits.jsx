@@ -2,7 +2,7 @@ import React from 'react'
 
 const Benefits = () => {
   return (
-    <section className="bg-background text-white py-20 px-10 md:px-24">
+    <section id='features' className="bg-background text-white py-20 px-10 md:px-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
         {/* Left Column - Heading */}
         <div>
