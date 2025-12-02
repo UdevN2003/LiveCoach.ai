@@ -57,22 +57,22 @@ function Interview() {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center bg-background text-white p-10 relative">
+    <div className="w-full min-h-screen flex flex-col justify-center bg-background text-white p-4 sm:p-6 lg:p-10 relative">
       
       {/* TITLE SECTION */}
-      <div className="w-[90%] max-w-7xl mx-auto mb-10">
-        <p className="text-4xl md:text-2xl font-semibold font-mono mb-6 text-primary text-center">
+      <div className="w-[90%] max-w-7xl mx-auto mb-6 lg:mb-10">
+        <p className="text-2xl sm:text-3xl lg:text-4xl md:text-2xl font-semibold font-mono mb-4 lg:mb-6 text-primary text-center">
           TRUSTED BY MANY
         </p>
-        <h1 className="text-4xl md:text-5xl font-semibold mb-6 text-white text-center">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-white text-center">
           INTERVIEWS AND SURVEYS
         </h1>
       </div>
 
-      <div className="w-[90%] max-w-7xl mx-auto flex items-center justify-between gap-10">
+      <div className="w-[90%] max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10">
         
         {/* VIDEO PLAYER */}
-        <div className="relative flex-1 h-[500px] rounded-2xl overflow-hidden">
+        <div className="relative w-full lg:flex-1 h-[300px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
           {autoStarted && (
             <video
               ref={videoRef}
@@ -87,14 +87,14 @@ function Interview() {
         </div>
 
         {/* THUMBNAILS */}
-        <div className="flex flex-col gap-6 w-[220px] z-20">
+        <div className="flex flex-row lg:flex-col gap-4 lg:gap-6 w-full lg:w-[220px] z-20 justify-center">
 
           {/* Thumbnail One */}
           <div
             onClick={handleSelectOne}
-            className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 
+            className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 w-full sm:w-auto
               ${activeVideo === 1 ? "scale-105 ring-4 ring-yellow-500": "opacity-80 hover:scale-105"}`}
-            style={{ width: "250px", height: "150px" }}
+            style={{ maxWidth: "250px", height: "150px" }}
           >
             <img
               src={thumbnailOne}
@@ -115,9 +115,9 @@ function Interview() {
           {/* Thumbnail Two */}
           <div
             onClick={handleSelectTwo}
-            className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 
+            className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 w-full sm:w-auto
               ${activeVideo === 2 ? "scale-105 ring-4 ring-yellow-500" : "opacity-80 hover:scale-105"}`}
-            style={{ width: "250px", height: "150px" }}
+            style={{ maxWidth: "250px", height: "150px" }}
           >
             <img
               src={thumbnailTwo}
@@ -137,9 +137,9 @@ function Interview() {
           {/* Thumbnail Three */}
           <div
             onClick={handleSelectThree}
-            className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 
+            className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 w-full sm:w-auto
               ${activeVideo === 3 ? "scale-105 ring-4 ring-yellow-500" : "opacity-80 hover:scale-105"}`}
-            style={{ width: "250px", height: "150px" }}
+            style={{ maxWidth: "250px", height: "150px" }}
           >
             <img
               src={thumbnailThree}
