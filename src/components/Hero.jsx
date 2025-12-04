@@ -20,14 +20,14 @@ function Hero() {
           <button className="bg-primary text-black px-6 py-2 rounded-md font-semibold hover:bg-primary transition-colors">
             Contact
           </button>
-        </div>
+        </div> 
       </nav>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-8 pt-32 pb-20">
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 my-56">
         {/* Main Heading */}
-        <h1 className="text-center mb-12">
-          <div className="text-6xl md:text-7xl font-bold mb-4 font-abeezee">
+        <h1 className="text-center ">
+          <div className="text-6xl md:text-7xl font-bold font-abeezee">
             Train Smarter With
           </div>
           <div className="text-6xl md:text-7xl font-bold">
@@ -42,23 +42,6 @@ function Hero() {
           <br />
           <span className="font-semibold">Anytime, Anywhere</span>
         </p>
-
-        {/* Scroll indicator */}
-        <div className="mt-16 animate-bounce">
-          <svg 
-            className="w-6 h-6 text-gray-400" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M19 14l-7 7m0 0l-7-7m7 7V3" 
-            />
-          </svg>
-        </div>
       </div>
     </div>
   )
