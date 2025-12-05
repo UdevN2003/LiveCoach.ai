@@ -25,10 +25,10 @@ export default {
 
       textShadow: {
         glow:`
-    0 0 4px #F8FE11,
-    0 0 8px rgba(248, 254, 17, 0.4),
-    0 0 16px rgba(248, 254, 17, 0.2)
-  `,
+              0 0 4px #F8FE11,
+              0 0 8px rgba(248, 254, 17, 0.4),
+              0 0 16px rgba(248, 254, 17, 0.2)
+            `,
       }
   }
  },
