@@ -6,7 +6,7 @@ const Benefits = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
         {/* Left Column - Heading */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-semibold">
+          <h2 className="text-shadow-glow text-3xl md:text-4xl font-semibold">
             Why Choose <span className="text-white">LiveCoach.AI?</span>
           </h2>
         </div>
