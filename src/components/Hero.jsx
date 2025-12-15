@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroBg from "../assets/images/Hero-background.png"
+import HeroBg from "../assets/images/Hero-Background.png"
 import Navbar from './Navbar'
 import hero from '../assets/images/hero-lcw.png'
 import hero2 from '../assets/images/hero-2.png'
