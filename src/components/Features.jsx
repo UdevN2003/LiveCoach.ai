@@ -2,6 +2,7 @@ import React from 'react';
 import featureOne from "../assets/images/feature-one.png"
 import featureTwo from "../assets/images/feature-two.png"
 import featureThree from "../assets/images/feature-three.png"
+import { motion } from "framer-motion";
 
 
 function Features() {
@@ -9,7 +10,10 @@ function Features() {
     <div className="relative bg-background">
 
       {/* Feature 1: Camera-Based Motion Tracking */}
-      <div className="max-w-7xl mx-auto px-8 mb-32">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="max-w-7xl mx-auto px-8 mb-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 relative">
             <img 
@@ -36,10 +40,13 @@ function Features() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Feature 2: Performance Analytics Dashboard */}
-      <div className="max-w-7xl mx-auto px-8">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="max-w-7xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -66,10 +73,13 @@ function Features() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Feature 3: Coach Athlete Connection */}
-      <div className="max-w-7xl mx-auto px-8">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="max-w-7xl mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 relative">
             <img 
@@ -95,7 +105,7 @@ function Features() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
 
     </div>
   );

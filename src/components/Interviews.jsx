@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 // Import thumbnails
 import thumbnailOne from "../assets/images/feature-one.png";
@@ -60,16 +61,22 @@ function Interview() {
     <div className="w-full min-h-screen flex flex-col justify-center bg-background text-white p-4 sm:p-6 lg:p-10 relative">
       
       {/* TITLE SECTION */}
-      <div className="w-[90%] max-w-7xl mx-auto mb-6 lg:mb-10">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="w-[90%] max-w-7xl mx-auto mb-6 lg:mb-10">
         <p className="text-2xl sm:text-3xl lg:text-4xl md:text-2xl font-semibold font-mono mb-4 lg:mb-6 text-primary text-center">
           TRUSTED BY MANY
         </p>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-white text-center">
           INTERVIEWS
         </h1>
-      </div>
+      </motion.div>
 
-      <div className="w-[90%] max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="w-[90%] max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10">
         
         {/* VIDEO PLAYER */}
         <div className="relative w-full lg:flex-1 h-[300px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
@@ -155,7 +162,7 @@ function Interview() {
           </div> */}
 
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

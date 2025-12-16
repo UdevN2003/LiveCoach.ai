@@ -1,12 +1,16 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 const Benefits = () => {
   return (
     <section id='features' className="bg-background text-white py-20 px-10 md:px-24">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
         {/* Left Column - Heading */}
         <div>
-          <h2 className="text-shadow-glow text-3xl md:text-4xl font-semibold">
+          <h2 className="text-3xl md:text-4xl font-semibold">
             Why Choose <span className="text-white">LiveCoach.AI?</span>
           </h2>
         </div>
@@ -46,7 +50,7 @@ const Benefits = () => {
             More Info <span className="text-primary inline-block transform transition-transform duration-300 ease-out group-hover:translate-x-1">→</span>
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

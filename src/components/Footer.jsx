@@ -1,10 +1,15 @@
 import React from 'react'
+import { motion } from "framer-motion";
+
 import { Facebook, Instagram } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-[#1a1a1a] text-white  py-20 px-10 md:px-24">
         
-      <div className="max-w-7xl mx-auto">
+      <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}  className="max-w-7xl mx-auto">
         
         {/* Main Footer Content */}
 
@@ -48,7 +53,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </footer>
   )
 }

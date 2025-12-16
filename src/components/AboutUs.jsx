@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 import aboutusOne from '../assets/images/aboutus-one.png';
 
@@ -14,7 +15,10 @@ const AboutUs = () => {
 return ( 
     
     <div id='about' className="min-h-screen bg-background text-white relative overflow-hidden py-12">
-        <section id="details" className="bg-background text-white pb-20 px-10 md:px-24">
+        <motion.section initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} id="details" className="bg-background text-white pb-20 px-10 md:px-24">
             {/* TITLE SECTION */}
                 <div className="w-[90%] max-w-7xl mx-auto mb-6 lg:mb-10">
                     <h1 className="font-abeezee text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-primary text-center ">
@@ -28,9 +32,12 @@ return (
 
                     <br /><br />We extend our sincere gratitude to our supervisor, Mrs. Kalhari  whose continuous guidance and constructive feedback have been invaluable throughout this project. We also thank the athletes, coaches, testers, and feedback contributors who helped refine our ideas and improve the platform’s accuracy and usability. Their support has played a key role in shaping the final outcome of our work.</p>
             </div>
-        </section>
+        </motion.section>
 
-        <section id="team" className="bg-background text-white pb-10 px-10 md:px-24">
+        <motion.section initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} id="team" className="bg-background text-white pb-10 px-10 md:px-24">
             <div className="max-w-a7xl mx-auto">
                 <div className="relative">
                     {/* Prev / Next */}
@@ -269,7 +276,7 @@ return (
                    
                 </div>
             </div>
-        </section>
+        </motion.section>
         
         
     </div>

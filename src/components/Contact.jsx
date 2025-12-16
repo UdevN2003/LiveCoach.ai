@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Smartphone } from 'lucide-react';
 import phoneImg from '../assets/images/download.png';
+import { motion } from "framer-motion";
+
 const Contact = () => {
 
 const [email, setEmail] = useState('');
@@ -53,7 +55,10 @@ const onSubscribe = async (e) => {
 
 return (
   <div className="min-h-[50vh] bg-background flex items-center justify-center px-4">
-    <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+    <motion.div initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}} className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
       {/* Phone Mockup */}
       <div className="flex justify-center">
         <div className="relative w-80">
@@ -137,7 +142,7 @@ return (
           {error && <p className="mt-2 text-sm text-red-500">{error}</p>}
         </div>
       </div>
-    </div>
+    </motion.div>
   </div>
 );
 }
