@@ -2,14 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 // Import thumbnails
-import thumbnailOne from "../assets/images/feature-one.png";
-import thumbnailTwo from "../assets/images/feature-two.png";
+import thumbnailOne from "../assets/images/sudath.jpeg";
+import thumbnailTwo from "../assets/images/pemlal.jpeg";
 import thumbnailThree from "../assets/images/feature-three.png";
 
 // Import videos
 import videoOne from "../assets/videos/Video-01.mp4";
 import videoTwo from "../assets/videos/Video-02.mp4";
-import videoThree from "../assets/videos/Video-03.mp4";
 
 function Interview() {
   const [activeVideo, setActiveVideo] = useState(1);
@@ -112,9 +111,9 @@ function Interview() {
             {/* HOVER OVERLAY */}
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
               <p className="text-white text-left px-3 text-xs font-semibold">
-                Mr. Pemlal Fernando<br/>
+                Mr. Sudath Munaweera<br/>
                 Former First-class Cricketer<br/>
-                Level 2 Qualified Cricket Coach
+                First-class Match Refree
               </p>
             </div>
           </div>
@@ -134,9 +133,9 @@ function Interview() {
 
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
               <p className="text-white text-left px-3 text-xs font-semibold">
-                Mr. Sudath Munaweera<br/>
+                Mr. Pemlal Fernando<br/>
                 Former First-class Cricketer<br/>
-                First-class Match Refree
+                Level 2 Qualified Cricket Coach
               </p>
             </div>
           </div>
