@@ -26,10 +26,10 @@ function Hero() {
           
           {/* Main Heading */}
           <h1 className="w-full">
-            <div className="text-shadow-glow text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-abeezee leading-tight">
+            <div className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-abeezee leading-tight">
               TRAIN SMARTER WITH
             </div>
-            <div className="text-shadow-glow text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+            <div className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
               LIVECOACH.AI
             </div>
           </h1>
