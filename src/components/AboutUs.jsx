@@ -39,52 +39,14 @@ return (
       transition={{duration:0.6, ease:'easeOut'}}
       viewport={{once:true, amount:0.3}} id="team" className="bg-background text-white pb-10 px-10 md:px-24">
             <div className="max-w-a7xl mx-auto">
-                <div className="relative">
-                    {/* Prev / Next */}
-                    <button
-                        aria-label="Previous"
-                        onClick={() => {
-                            const track = document.getElementById('team-scroll');
-                            if (!track) return;
-                            track.scrollBy({ left: -track.clientWidth * 0.6, behavior: 'smooth' });
-                        }}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/6 border border-white/10 p-2 hover:bg-white/8 focus:outline-none focus:ring-2 focus:ring-white/20"
-                    >
-                        <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" aria-hidden>
-                            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button>
-
-                    <button
-                        aria-label="Next"
-                        onClick={() => {
-                            const track = document.getElementById('team-scroll');
-                            if (!track) return;
-                            track.scrollBy({ left: track.clientWidth * 0.6, behavior: 'smooth' });
-                        }}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 z-20 rounded-full bg-white/6 border border-white/10 p-2 hover:bg-white/8 focus:outline-none focus:ring-2 focus:ring-white/20"
-                    >
-                        <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" aria-hidden>
-                            <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button>
-
+                <div className="relative ">
                     {/* Scrollable track */}
-                    <div
-                        id="team-scroll"
-                        className="flex gap-6 overflow-x-auto snap-x snap-mandatory py-4 px-8 md:px-4 scrollbar-none"
-                        tabIndex={0}
-                        role="list"
-                        aria-label="Team members carousel"
-                        onKeyDown={(e) => {
-                            const track = document.getElementById('team-scroll');
-                            if (!track) return;
-                            if (e.key === 'ArrowRight') track.scrollBy({ left: track.clientWidth * 0.6, behavior: 'smooth' });
-                            if (e.key === 'ArrowLeft') track.scrollBy({ left: -track.clientWidth * 0.6, behavior: 'smooth' });
-                        }}
-                    >
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center'>
                         {/* Card 1 */}
-                        <article
+                        <motion.article initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.2, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}
                             id="member-1"
                             role="listitem"
                             className="snap-center flex-shrink-0 w-[78%] sm:w-80 md:w-72 lg:w-80 bg-white/5 border border-white/8 rounded-2xl p-5 shadow-lg transform transition duration-500 hover:scale-105"
@@ -111,10 +73,13 @@ return (
                             </div>
                             </div>
                            
-                        </article>
+                        </motion.article>
 
                         {/* Card 2 */}
-                        <article
+                        <motion.article initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.4, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}
                             id="member-1"
                             role="listitem"
                             className="snap-center flex-shrink-0 w-[78%] sm:w-80 md:w-72 lg:w-80 bg-white/5 border border-white/8 rounded-2xl p-5 shadow-lg transform transition duration-500 hover:scale-105"
@@ -142,10 +107,13 @@ return (
                             </div>
                             </div>
                            
-                        </article>
+                        </motion.article>
 
                         {/* Card 3 */}
-                        <article
+                        <motion.article initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}
                             id="member-1"
                             role="listitem"
                             className="snap-center flex-shrink-0 w-[78%] sm:w-80 md:w-72 lg:w-80 bg-white/5 border border-white/8 rounded-2xl p-5 shadow-lg transform transition duration-500 hover:scale-105"
@@ -172,10 +140,13 @@ return (
                             </div>
                             </div>
                            
-                        </article>
+                        </motion.article>
 
                         {/* Card 4 */}
-                        <article
+                        <motion.article initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.2, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}
                             id="member-1"
                             role="listitem"
                             className="snap-center flex-shrink-0 w-[78%] sm:w-80 md:w-72 lg:w-80 bg-white/5 border border-white/8 rounded-2xl p-5 shadow-lg transform transition duration-500 hover:scale-105"
@@ -202,10 +173,13 @@ return (
                             </div>
                             </div>
                            
-                        </article>
+                        </motion.article>
 
                         {/* Card 5 */}
-                        <article
+                        <motion.article initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.4, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}
                             id="member-1"
                             role="listitem"
                             className="snap-center flex-shrink-0 w-[78%] sm:w-80 md:w-72 lg:w-80 bg-white/5 border border-white/8 rounded-2xl p-5 shadow-lg transform transition duration-500 hover:scale-105"
@@ -232,10 +206,13 @@ return (
                             </div>
                             </div>
                            
-                        </article>
+                        </motion.article>
 
                         {/* Card 6 */}
-                        <article
+                        <motion.article initial={{opacity:0, y:30}}
+      whileInView={{opacity:1 , y:0}}
+      transition={{duration:0.6, ease:'easeOut'}}
+      viewport={{once:true, amount:0.3}}
                             id="member-1"
                             role="listitem"
                             className="snap-center flex-shrink-0 w-[78%] sm:w-80 md:w-72 lg:w-80 bg-white/5 border border-white/8 rounded-2xl p-5 shadow-lg transform transition duration-500 hover:scale-105"
@@ -262,18 +239,8 @@ return (
                             </div>
                             </div>
                            
-                        </article>
-                        
-
-                        
+                        </motion.article>    
                     </div>
-                    <style>{`
-                                                /* Chrome, Safari, Edge, Opera */
-                                                #team-scroll::-webkit-scrollbar { display: none; }
-                                                /* Firefox */
-                                                #team-scroll { scrollbar-width: none; -ms-overflow-style: none; }
-                                            `}</style>    
-                   
                 </div>
             </div>
         </motion.section>
