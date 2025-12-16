@@ -17,8 +17,8 @@ function Hero() {
         />
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
+      <motion.div initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}>
         <Navbar></Navbar>
       </motion.div>
@@ -27,8 +27,8 @@ function Hero() {
       <div className='min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 md:px-16 lg:px-0 pt-8 lg:pt-0'>
           
           {/* Hero Content */}
-        <motion.div initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
+        <motion.div initial={{ opacity: 0, y: 20  }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
  className="relative z-10 flex flex-col items-center lg:items-start justify-start gap-6 lg:gap-10 lg:pl-32 flex-1 order-2 lg:order-1 text-center lg:text-left">
           
@@ -57,8 +57,8 @@ function Hero() {
         </motion.div>
 
         {/* Hero Image Container */}
-        <motion.div initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
+        <motion.div initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
  className="relative z-10 flex-1 w-full h-64 sm:h-80 md:h-96 lg:h-full flex items-center justify-center order-1 lg:order-2 mb-8 lg:mb-0">
           <img 

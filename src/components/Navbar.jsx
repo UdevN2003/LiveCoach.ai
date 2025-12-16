@@ -54,10 +54,9 @@ function Navbar() {
             <div className="space-y-3 sm:space-y-4">
               <div>
                 <h3 className="font-semibold text-text-default-700 text-sm sm:text-base">Email:</h3>
-                <p className="text-text-muted text-sm sm:text-base">livecoachai@gmail.com</p>
+                <p className="text-text-muted text-sm sm:text-base">sdgpcs086@gmail.com</p>
               </div>
             </div>
-            
             <button 
               onClick={closeModal}
               className="mt-4 sm:mt-6 w-full bg-black text-white px-4 sm:px-6 py-2 rounded-md font-semibold hover:text-[#ff0000] transition-colors text-sm sm:text-base"

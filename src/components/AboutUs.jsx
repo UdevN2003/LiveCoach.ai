@@ -126,10 +126,10 @@ return (
                                     <p className="text-white/75 text-sm text-center">ML Developer</p>
                                 </div>
                                  <div className="flex gap-3">
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev LinkedIn">
+                                <a className="text-white/80 hover:text-white transition" href="https://www.linkedin.com/in/kalanajayaweera0714/" aria-label="Udev LinkedIn">
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V8H0v16zM7.5 8h4.8v2.2h.1c.7-1.3 2.4-2.6 4.9-2.6 5.3 0 6.3 3.5 6.3 8V24h-5v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
                                 </a>
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev Github">
+                                <a className="text-white/80 hover:text-white transition" href="https://github.com/KalanJayy" aria-label="Udev Github">
                                     <svg
                                         className="w-5 h-5"
                                         viewBox="0 0 24 24"
@@ -157,10 +157,10 @@ return (
                                     <p className="text-white/75 text-sm text-center">ML Developer</p>
                                 </div>
                                  <div className="flex gap-3">
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev LinkedIn">
+                                <a className="text-white/80 hover:text-white transition" href="https://www.linkedin.com/in/kalana-malhara-5a24a532a/" aria-label="Udev LinkedIn">
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V8H0v16zM7.5 8h4.8v2.2h.1c.7-1.3 2.4-2.6 4.9-2.6 5.3 0 6.3 3.5 6.3 8V24h-5v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
                                 </a>
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev Github">
+                                <a className="text-white/80 hover:text-white transition" href="https://github.com/kalana-03" aria-label="Udev Github">
                                     <svg
                                         className="w-5 h-5"
                                         viewBox="0 0 24 24"
@@ -187,10 +187,10 @@ return (
                                     <p className="text-white/75 text-sm text-center">ML Developer</p>
                                 </div>
                                  <div className="flex gap-3">
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev LinkedIn">
+                                <a className="text-white/80 hover:text-white transition" href="https://www.linkedin.com/in/thewan-sewmin-a71687349/" aria-label="Udev LinkedIn">
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V8H0v16zM7.5 8h4.8v2.2h.1c.7-1.3 2.4-2.6 4.9-2.6 5.3 0 6.3 3.5 6.3 8V24h-5v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
                                 </a>
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev Github">
+                                <a className="text-white/80 hover:text-white transition" href="https://github.com/sewmin999" aria-label="Udev Github">
                                    <svg
                                         className="w-5 h-5"
                                         viewBox="0 0 24 24"
@@ -217,10 +217,10 @@ return (
                                     <p className="text-white/75 text-sm text-center">Frontend & Backend Developer</p>
                                 </div>
                                  <div className="flex gap-3">
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev LinkedIn">
+                                <a className="text-white/80 hover:text-white transition" href="https://www.linkedin.com/in/buddhima-jothiwansa-20b91027a/" aria-label="Udev LinkedIn">
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V8H0v16zM7.5 8h4.8v2.2h.1c.7-1.3 2.4-2.6 4.9-2.6 5.3 0 6.3 3.5 6.3 8V24h-5v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
                                 </a>
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev Github">
+                                <a className="text-white/80 hover:text-white transition" href="https://github.com/Buddhima1030" aria-label="Udev Github">
                                    <svg
                                         className="w-5 h-5"
                                         viewBox="0 0 24 24"
@@ -247,10 +247,10 @@ return (
                                     <p className="text-white/75 text-sm text-center">Frontend & Backend Developer</p>
                                 </div>
                                  <div className="flex gap-3">
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev LinkedIn">
+                                <a className="text-white/80 hover:text-white transition" href="www.linkedin.com/in/dinukas" aria-label="Udev LinkedIn">
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V8H0v16zM7.5 8h4.8v2.2h.1c.7-1.3 2.4-2.6 4.9-2.6 5.3 0 6.3 3.5 6.3 8V24h-5v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
                                 </a>
-                                <a className="text-white/80 hover:text-white transition" href="#" aria-label="Udev Github">
+                                <a className="text-white/80 hover:text-white transition" href="https://github.com/DinukaS2004" aria-label="Udev Github">
                                     <svg
                                         className="w-5 h-5"
                                         viewBox="0 0 24 24"
