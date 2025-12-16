@@ -65,7 +65,7 @@ function Interview() {
           TRUSTED BY MANY
         </p>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-white text-center">
-          INTERVIEWS AND SURVEYS
+          INTERVIEWS
         </h1>
       </div>
 
@@ -135,7 +135,7 @@ function Interview() {
           </div>
 
           {/* Thumbnail Three */}
-          <div
+          {/* <div
             onClick={handleSelectThree}
             className={`group cursor-pointer relative rounded-xl overflow-hidden transition-all duration-300 w-full sm:w-auto
               ${activeVideo === 3 ? "scale-105 ring-4 ring-yellow-500" : "opacity-80 hover:scale-105"}`}
@@ -152,7 +152,7 @@ function Interview() {
                 Survey Feedback – Athlete Satisfaction
               </p>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>
