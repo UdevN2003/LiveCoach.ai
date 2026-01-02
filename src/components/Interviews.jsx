@@ -57,7 +57,7 @@ function Interview() {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center bg-background text-white p-4 sm:p-6 lg:p-10 relative">
+    <div className="w-full flex flex-col justify-center bg-black/40 backdrop-blur-sm text-white  sm:p-6 lg:p-10 relative">
       
       {/* TITLE SECTION */}
       <motion.div initial={{opacity:0, y:30}}
@@ -65,7 +65,7 @@ function Interview() {
       transition={{duration:0.6, ease:'easeOut'}}
       viewport={{once:true, amount:0.3}} className="w-[90%] max-w-7xl mx-auto mb-6 lg:mb-10">
         <p className="text-2xl sm:text-3xl lg:text-4xl md:text-2xl font-semibold font-mono mb-4 lg:mb-6 text-primary text-center">
-          TRUSTED BY MANY
+          TRUSTED BY MANY PROFESSIONALS
         </p>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 lg:mb-6 text-white text-center">
           INTERVIEWS

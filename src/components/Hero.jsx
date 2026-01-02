@@ -1,78 +1,153 @@
 import React from 'react'
-import HeroBg from "../assets/images/Hero-Background.png"
 import Navbar from './Navbar'
-import hero from '../assets/images/hero-lcw.png'
-import hero2 from '../assets/images/hero-2.png'
+import herobg from '../assets/videos/herobg.mov'
 import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div className="min-h-screen bg-background text-white relative overflow-hidden">
+    <div className="min-h-screen text-white relative overflow-hidden">
 
-      <motion.div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60">
-        <img 
-          src={HeroBg}
-          alt="Boxing background" 
-          className="w-full h-full object-cover opacity-5"
-        />
+      {/* Navbar */}
+      <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="relative z-20"
+      >
+        <Navbar />
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}>
-        <Navbar></Navbar>
-      </motion.div>
-
-      {/* Mobile and Desktop Layout */}
-      <div className='min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 md:px-16 lg:px-0 pt-8 lg:pt-0'>
+      {/* Centered Hero Content */}
+      <div className='relative z-10 min-h-[calc(100vh-5rem)] flex items-center justify-center px-4 sm:px-8 md:px-16'>
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 50, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="text-center max-w-4xl mx-auto"
+        >
           
-          {/* Hero Content */}
-        <motion.div initial={{ opacity: 0, y: 20  }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
- className="relative z-10 flex flex-col items-center lg:items-start justify-start gap-6 lg:gap-10 lg:pl-32 flex-1 order-2 lg:order-1 text-center lg:text-left">
-          
-          {/* Main Heading */}
-          <h1 className="w-full">
-            <div className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-abeezee leading-tight">
-              TRAIN SMARTER WITH
-            </div>
-            <div className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-              LIVECOACH.AI
-            </div>
-          </h1>
+          {/* Main Heading with Glow Effect */}
+          <motion.h1 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mb-8"
+          >
+            <motion.div 
+              whileHover={{ scale: 1.02, textShadow: "0 0 20px rgba(255, 215, 0, 0.5)" }}
+              transition={{ duration: 0.3 }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-abeezee leading-tight mb-4"
+            >
+              <span className="bg-gradient-to-r from-primary via-yellow-300 to-primary bg-clip-text text-transparent">
+                TRAIN SMARTER
+              </span>
+            </motion.div>
+            <motion.div 
+              whileHover={{ scale: 1.02, textShadow: "0 0 20px rgba(255, 215, 0, 0.5)" }}
+              transition={{ duration: 0.3 }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-abeezee leading-tight"
+            >
+              <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                WITH <br />
+              </span>
+              <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                LIVECOACH.AI
+              </span>
+              
+            </motion.div>
+          </motion.h1>
 
-          {/* Subheading */}
-          <p className="text-base sm:text-lg lg:text-xl text-text max-w-sm sm:max-w-md lg:max-w-xl leading-relaxed px-4 lg:px-0">
-            LiveCoach.AI analyzes your performance, gives instant feedback
-            and helps you master your technique like a pro.
-            <br />
-            <span className="font-semibold">Anytime, Anywhere</span>
-          </p>
+          {/* Subheading with Animation */}
+          <motion.p 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-12"
+          >
+            Experience the future of sports training with{' '} <br />
+            <motion.span 
+              whileHover={{ color: "#FFD700" }}
+              className="font-semibold text-white cursor-default"
+            >
+              LiveCoach.AI
+            </motion.span>
+            {' '}Real-time analysis, instant feedback, and professional coaching at your fingertips.
+          </motion.p>
 
-          {/* CTA Button for Mobile */}
-          <button className="lg:hidden bg-primary text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors mt-4">
-            Get Started
-          </button>
+          {/* CTA Buttons */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
+          >
+            <motion.button 
+              whileHover={{ 
+                scale: 1.05, 
+                boxShadow: "0 10px 30px rgba(255, 215, 0, 0.3)",
+                backgroundColor: "#FFD700"
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-primary text-black px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 w-full sm:w-auto"
+            >
+              Start Training Now
+            </motion.button>
+            
+            <motion.button 
+              whileHover={{ 
+                scale: 1.05,
+                borderColor: "#FFD700",
+                color: "#FFD700"
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
+            >
+              Watch Demo
+            </motion.button>
+          </motion.div>
+
+          {/* Floating Elements */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 1 }}
+            className="absolute top-1/2 left-10 hidden lg:block"
+          >
+            <motion.div 
+              animate={{ 
+                y: [0, -20, 0],
+                rotate: [0, 5, 0]
+              }}
+              transition={{ 
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="w-16 h-16 bg-primary/20 rounded-full backdrop-blur-sm"
+            ></motion.div>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.4, duration: 1 }}
+            className="absolute top-1/4 right-10 hidden lg:block"
+          >
+            <motion.div 
+              animate={{ 
+                y: [0, 30, 0],
+                rotate: [0, -10, 0]
+              }}
+              transition={{ 
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="w-12 h-12 bg-white/10 rounded-full backdrop-blur-sm"
+            ></motion.div>
+          </motion.div>
         </motion.div>
-
-        {/* Hero Image Container */}
-        <motion.div initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
- className="relative z-10 flex-1 w-full h-64 sm:h-80 md:h-96 lg:h-full flex items-center justify-center order-1 lg:order-2 mb-8 lg:mb-0">
-          <img 
-            src={hero} 
-            alt="hero image" 
-            className="h-full w-auto max-w-full object-contain lg:max-h-[80vh]"
-          />
-        </motion.div>
-
-        {/* Background Shape - Desktop only */}
-        <div
-          className="hidden xl:block absolute top-0 right-0 h-full w-full bg-primary
-          [clip-path:polygon(80%_0%,100%_0%,100%_100%,40%_100%)] pointer-events-none opacity-20 lg:opacity-100">
-        </div>
       </div>
     </div>
   )

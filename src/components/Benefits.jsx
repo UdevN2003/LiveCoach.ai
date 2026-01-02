@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Benefits = () => {
   return (
-    <section id='features' className="bg-background text-white py-20 px-10 md:px-24">
+    <section id='features' className="bg-black/40 backdrop-blur-sm text-white py-20 px-10 md:px-24">
       <motion.div initial={{opacity:0, y:30}}
       whileInView={{opacity:1 , y:0}}
       transition={{duration:0.6, ease:'easeOut'}}

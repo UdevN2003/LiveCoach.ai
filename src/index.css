@@ -5,3 +5,19 @@
 body {
   font-family: 'ABeeZee', sans-serif;
 }
+
+@layer components {
+  .flair {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 9999px;
+    background: radial-gradient(circle, rgba(210, 210, 0, 0.35), transparent 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+

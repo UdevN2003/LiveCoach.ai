@@ -54,7 +54,7 @@ const onSubscribe = async (e) => {
 };
 
 return (
-  <div className="min-h-[50vh] bg-background flex items-center justify-center px-4">
+  <div className="min-h-[50vh] bg-black/40 backdrop-blur-sm flex items-center justify-center px-4">
     <motion.div initial={{opacity:0, y:30}}
       whileInView={{opacity:1 , y:0}}
       transition={{duration:0.6, ease:'easeOut'}}
