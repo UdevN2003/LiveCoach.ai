@@ -115,7 +115,7 @@ function Navbar() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-white text-sm">Email:</h3>
-                  <p className="text-gray-300 text-sm">livecoachai@gmail.com</p>
+                  <p className="text-gray-300 text-sm">livecoach94@gmail.com</p>
                 </div>
               </motion.div>
               
