@@ -94,7 +94,8 @@ function Hero() {
               Start Training Now
             </motion.button>
             
-            <motion.button 
+            <a href="https://youtu.be/HetG1HfYZUU">
+              <motion.button 
               whileHover={{ 
                 scale: 1.05,
                 borderColor: "#FFD700",
@@ -105,6 +106,7 @@ function Hero() {
             >
               Watch Demo
             </motion.button>
+            </a>
           </motion.div>
 
           {/* Floating Elements */}
